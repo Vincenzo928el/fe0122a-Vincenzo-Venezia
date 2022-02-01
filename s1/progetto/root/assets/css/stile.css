@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap');
+
+html            {font-size: 62,5%;}
+
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #393d41;
+    line-height: 1.65rem;  
+}   
+
+section         {font-size: 1.1rem;}
+
+section h2      {font-size: 1.2em;}
+
+header          {font-size: 2rem;
+    background-color: black;
+}
+
+header img {
+    width: 5em;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+#sfondo{
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    padding: 3em;
+    background-position: center top;
+}
+
+h3{
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+p{
+    margin: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.8em;
+}
+
+h1, h2, h3{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+ 
+h1{
+    font-size: 3em;
+    line-height: 3rem;
+}
+
+
+section figure img{
+    border-radius: 50%;
+    width: 20em;
+}
+
+#testimonianze h2{
+    font-size: 2em;
+    line-height: 3rem;
+    color: white;
+    margin: 1.2em;
+} 
+
+#testimonianze{
+    background-color: #e22d0e;
+    padding-top: 1.8em; 
+    padding-bottom: 2.8em; 
+}
+
+blockquote, figcaption {
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.25em;
+    margin: 1.2em;  
+}
+
+figcaption {
+    font-size: 1.7em;
+}
+
+span{
+    font-size: 0.6em;
+}
+
+button {
+    background-color: #f04c2f; 
+    border-radius: 4%;
+    border: 0px;
+    padding: 1em 3em 1em 3em; 
+}
+
+button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+footer          {font-size: 1rem;
+    background-color: #25a2c3;
+    color: #c8e7f0;
+    line-height: 1.8em;  
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+footer address  {font-size: 1.2em;
+}
+
+footer h2, footer a{
+    color: #c8e7f0;
+}
+
+footer hr{
+    border-top: 1px solid white;
+    margin: 1.8em 8em 1.8em 8em;
+}
+
+small{
+    font-size: small;
+}
+
+.spazio{
+    visibility: hidden;
+}
+
+footer h2{
+    font-size: 2em;
+    margin: 1em;
+}
+
+aside div h3, aside div p{
+    font-size: 1em;
+}
+
+aside figure img{
+    width: 100%;
+}
+
+aside>div {
+    border: 1px solid #dee1e3;
+    margin: 2em;
+}
+

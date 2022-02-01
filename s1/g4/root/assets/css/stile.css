@@ -1,0 +1,26 @@
+/* IMPOSTAZIONI GENERALI */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway:wght@100&display=swap');
+
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+body{
+    background-image: url(../img/sfondo.png);
+    background-repeat: repeat;
+    background-position: left 2500px 1500px;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
