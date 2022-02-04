@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap%27');
+
+body{
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;  
+}
+hr{
+    display: none;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.fas.fa-ellipsis-h, .far.fa-comment-dots, .fas.fa-map-marker-alt, .fas.fa-user, .far.fa-grin-stars, .fab.fa-facebook-square,
+.fab.fa-linkedin, .fab.fa-instagram{
+    color: #e42424;
+    font-size: 1.5em;
+}
+
+#logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    position: sticky;
+    z-index: 3;
+}
+
+header nav ul{
+    position: fixed;
+    top: -100%;
+    transition: top 1s;
+    background-color: white;
+    width: 100vw;
+    height: 35vh;
+    z-index: 1;
+    box-shadow: 2px 2px 6px #666;
+    padding-top: 70px;
+    padding-left: 40px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: grey;
+}
+.btnMenu{
+    display: none;
+}
+.btnMenu:checked ~ nav ul{
+    top: 0;
+}
+.icoMenu{
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    z-index: 2;
+}
+.button{
+    display: inline-block;
+    color: white;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    border: 0;
+    font-size: 1.2rem;
+    padding: 6px;
+    text-decoration: none;
+    text-align: center;
+}
+#banner{
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#banner div{
+    padding: 1em;
+    padding-top: 2em;
+    color: white;
+}
+span{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 50px;
+    line-height: 1.1em;
+}
+#banner p{
+    font-size: 18px;
+    line-height: 1.1em;
+    margin-top: 2em;
+}
+article{
+    text-align: center;
+    margin-top: 40px;
+    padding: 1em;
+}
+
+h2{
+    font-size: 35px;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+}
+p, address{
+    font-size: 18px;
+    margin: 0 1em 1em;
+}
+h3{
+    font-size: 25px;
+}
+#blu{
+    text-align: center;
+    padding: 4em 1em;
+    background-color: #0c0633;
+    color: white;
+}
+aside{
+    margin: 2em 1em;
+    text-align: center;
+}
+aside img{
+    width: 15em;
+}
+
+footer{
+    padding: 2em;
+    background-color: #eeeeee;
+}
+footer p, address{
+    margin-right: 0;
+}
+h4{
+    line-height: 1.1em;
+    margin-bottom: 0.6em;
+    margin-top: 2em;
+}
+
+footer fieldset input{
+    height: 50px;    
+}
+
+fieldset form{
+    display: flex;
+    flex-direction: column;
+}
