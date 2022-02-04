@@ -16,6 +16,8 @@ header{
     width: 100%;
     height: 100px;
     background-color: white;
+    box-shadow: 2px 6px 6px 6px #666;
+    z-index: 3;
 }
 
 .fas.fa-ellipsis-h, .far.fa-comment-dots, .fas.fa-map-marker-alt, .fas.fa-user, .far.fa-grin-stars, .fab.fa-facebook-square,
@@ -146,4 +148,23 @@ footer fieldset input{
 fieldset form{
     display: flex;
     flex-direction: column;
+}
+
+@keyframes animazione {
+    100% {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0); }
+  }
+.animazione {
+    animation-name: animazione;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 1);
+}
+.animazione:hover:before, .animazione:focus:before, .animazione:active:before {
+    -webkit-animation-name: animazione;
+    animation-name: animazione;
 }
