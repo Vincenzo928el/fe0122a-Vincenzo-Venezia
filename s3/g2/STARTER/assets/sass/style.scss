@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap%27');
+
+@import 'head_foot';
+
+/* Immagini Aside */
+
+$prima-img: 'https://images.pexels.com/photos/11001784/pexels-photo-11001784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
+
+$sec-img: 'https://images.pexels.com/photos/9876019/pexels-photo-9876019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
+
+$terza-img: 'https://images.pexels.com/photos/11045163/pexels-photo-11045163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
+
+$quarta-img: 'https://images.pexels.com/photos/10196911/pexels-photo-10196911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
+
+
+@mixin imgSide{
+    display: block;
+    margin-bottom: 1em;
+    height: 10em;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ASIDE - Sezione Laterale */
+
+#main{
+    font-family: 'Supermercado One', cursive;
+    margin: 1em;
+    justify-content: space-between;
+
+    h1{
+        font-size: 3em;
+        color: darken(red, 10%);
+    }
+
+    #sidebar{
+        
+        ul{
+            padding-left: 0;
+        
+            li{
+                font-family: 'Supermercado One', cursive;
+            }
+
+            li:nth-child(1){
+                @include imgSide();
+                background-image: url('#{$prima-img}');    
+            }
+
+            li:nth-child(2){
+                @include imgSide();
+                background-image: url('#{$sec-img}');   
+            }
+
+            li:nth-child(3){
+                @include imgSide();
+                background-image: url('#{$terza-img}');    
+            }
+
+            li:nth-child(4){
+                @include imgSide();
+                background-image: url('#{$quarta-img}');   
+            }
+        }    
+    }
+}
+    @mixin tablet{
+        @media(min-width:500px){@content;}
+    }   
+        #main{
+            @include tablet{
+            display: flex;
+
+            #content{
+                flex-basis: 60%;
+            }
+
+            #sidebar{
+                flex-basis: 30%;
+
+                ul {
+                    padding-left: 40px;
+                }    
+            } 
+            }
+        }
