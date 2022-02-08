@@ -1,0 +1,41 @@
+$elementi-menu: inline-block;
+$secondary-color: grey;
+
+@media screen and (max-width: 500px) {
+
+    header{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        li{
+            display: $elementi-menu;
+    
+            a{
+                text-decoration: none;
+                color: $secondary-color;
+                font-weight: bold;
+            }
+        }
+    
+        img{
+            display: none;
+        }
+        .showcase-content{
+            color: azure;
+            background-image: url(https://picsum.photos/id/0/450/450);
+            background-size: cover;
+            background-position: center center;
+            padding: 2em;
+
+            p{
+                font-weight: bolder;
+                text-shadow: 1px 1px grey;
+            }
+        }
+    }    
+}

@@ -1,0 +1,44 @@
+@media screen and (max-width: 500px) {
+  header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; }
+    header nav {
+      display: flex;
+      justify-content: space-around; }
+    header li {
+      display: inline-block; }
+      header li a {
+        text-decoration: none;
+        color: grey;
+        font-weight: bold; }
+    header img {
+      display: none; }
+    header .showcase-content {
+      color: azure;
+      background-image: url(https://picsum.photos/id/0/450/450);
+      background-size: cover;
+      background-position: center center;
+      padding: 2em; }
+      header .showcase-content p {
+        font-weight: bolder;
+        text-shadow: 1px 1px grey; } }
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 6%;
+  text-decoration: none; }
+
+.btn-secondary {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 6%;
+  text-decoration: none; }
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.5, 1.5);
+  background-color: grey; }
