@@ -1,0 +1,39 @@
+
+ @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+ @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+
+ @import "function";
+
+$back-viola: rgb(77, 17, 77);
+
+article{
+
+    .container{
+        text-align: center;
+        
+        .sezione{
+            padding: 50px;
+        }
+    }
+}
+
+.brand{
+    text-align: center;
+    flex-grow: 1;
+    padding: 12.8px;
+}
+
+aside{
+    background-color: $back-viola;
+    color: crea-contrasto-sfondo($back-viola);
+    .slide-car{
+        height: 300px;
+
+        img{
+            border-radius: 50%;
+        }
+    }
+}
+
