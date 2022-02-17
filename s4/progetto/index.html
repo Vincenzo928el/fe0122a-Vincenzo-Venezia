@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+
+    <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+<body>
+
+    <div class="calcolatrice">
+        <div>
+            <input id="risultato" type="text" readonly="">
+            <div>
+                <button class="numeri" id="7" onclick="prendiTasto(this)">7</button>
+                <button class="numeri" id="8" onclick="prendiTasto(this)">8</button>
+                <button class="numeri" id="9" onclick="prendiTasto(this)">9</button>
+                <button class="operatore" id="/" onclick="prendiTasto(this)">/</button>
+            </div>
+            <div>
+                <button class="numeri" id="4" onclick="prendiTasto(this)">4</button>
+                <button class="numeri" id="5" onclick="prendiTasto(this)">5</button>
+                <button class="numeri" id="6" onclick="prendiTasto(this)">6</button> 
+                <button class="operatore" id="*" onclick="prendiTasto(this)">x</button>
+            </div>
+            <div>
+                <button class="numeri" id="1" onclick="prendiTasto(this)">1</button>
+                <button class="numeri" id="2" onclick="prendiTasto(this)">2</button>
+                <button class="numeri" id="3" onclick="prendiTasto(this)">3</button>
+                <button class="operatore" id="-" onclick="prendiTasto(this)">-</button>
+            </div>
+            <div>
+                <button class="tasto" id="C" onclick="resetCalcolatrice()">C</button>
+                <button class="numeri"id="0" onclick="prendiTasto(this)">0</button>
+                <button class="operatore" id="." onclick="prendiTasto(this)">.</button>
+                <button class="operatore" id="+" onclick="prendiTasto(this)">+</button>
+            </div>
+            <div> 
+                <button class="uguale operatore" id="=" onclick="totale()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/myscript.js"></script>
+</body>
+</html>
