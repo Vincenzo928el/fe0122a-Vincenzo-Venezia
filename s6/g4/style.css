@@ -1,0 +1,21 @@
+#box{
+    width: 0px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    background-image: url(img/urlo.jpg);
+    background-position: 100%;
+    background-size: cover;
+}
+#testo{
+    color: white;
+    font-size: 90px;
+}
+
+button{
+    font-size: 50px;
+    background-color: orangered;
+    border-radius: 5px;
+}
