@@ -36,14 +36,15 @@ class Vestiti{
         this.saldo = saldo
     }
 
-    getSaldoCapo():number{
-        return Math.ceil(this.prezzoivainclusa * this.saldo / 100)
+    getSaldoCapo():any{
+        return (this.prezzoivainclusa * this.saldo / 100).toFixed(2)
     }
 
 
-    getAcquistoCapo():number{
+    getAcquistoCapo():any{
         let sconto = this.prezzoivainclusa * this.saldo / 100
-        return Math.ceil(this.prezzoivaesclusa - sconto)
+        let prezzo = this.prezzoivainclusa
+        return (prezzo - sconto).toFixed(2)
     }
 }
 //CAPO 1
