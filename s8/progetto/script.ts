@@ -4,7 +4,6 @@ fetch('Abbigliamento.json')
 
     data.forEach((item:any) =>{
         let capi = new Vestiti(item.id, item.codprod, item.collezione, item.capo, item.modello, item.quantita, item.colore, item.prezzoivaesclusa, item.prezzoivainclusa, item.disponibile, item.saldo)
-        //console.log(abb.mostraModello())
         console.log(capi)
     })
 })
@@ -37,19 +36,10 @@ class Vestiti{
         this.saldo = saldo
     }
 
-    /*mostraModello():string{
-        return `Il modello è ${this.modello}`
-    }*/
-
     getSaldoCapo():number{
         return Math.ceil(this.prezzoivainclusa * this.saldo / 100)
     }
 
-    
-    /*getSaldoCapo(sconto:number):any{
-        sconto = this.saldo
-        return this.prezzoivainclusa * sconto / 100
-    }*/
 
     getAcquistoCapo():number{
         let sconto = this.prezzoivainclusa * this.saldo / 100
